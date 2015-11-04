@@ -1,0 +1,55 @@
+* {
+    -fx-background-color: #2D3339;
+    -fx-text-fill: AQUA;
+    -fx-font-family: Papyrus;
+}
+
+.root {
+    -fx-alignment: center;
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+}
+
+.title {
+    -fx-font-size: 44px;
+    -fx-fill: AQUA;
+}
+
+.button {
+   /* -fx-font-size: 35px;
+    -fx-border-radius: 15%;
+    -fx-border-width: 2px;
+    -fx-background-color: #5cb85c;
+    -fx-height: 50px;
+    -fx-width: 100px;*/
+    -fx-font-size: 35px;
+    -fx-background-color:
+        linear-gradient(AQUA, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10 20 10 20;
+}
+
+.label {
+    -fx-font-size: 15px;
+}
+
+.text-field {
+    -fx-color: white;
+    -fx-pref-width: 100px;
+    -fx-border-radius: 3px;
+    -fx-border-width: 1px;
+    -fx-border-color: AQUA;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-padding: 0 10 0 10;
+    -fx-font-weight: 20;
+}
+
+#result {
+-fx-font-size: 30px;
+}
