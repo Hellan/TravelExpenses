@@ -4,6 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
+import java.text.DecimalFormat;
+
 public class Controller {
 
     @FXML
@@ -17,6 +19,7 @@ public class Controller {
 
     public void calculate(ActionEvent actionEvent) {
         double expense = (Double.parseDouble(kilometer.getText()) / (Double.parseDouble(lKm.getText())) * Double.parseDouble(price.getText()));
-        result.setText(Double.toString(expense));
+        DecimalFormat df = new DecimalFormat("###.##");
+        result.setText(df.format(expense));
     }
 }
